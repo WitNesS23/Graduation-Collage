@@ -162,7 +162,7 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 
 /* 左侧主要导航条 */
 .main-nav{
-	float: left;
+	float: right;
 	width: 230px;
 	background-color: #fafafa;
 	position: relative;
@@ -199,18 +199,18 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 	font-size: 14px;
 }
 
-.main-nav .job-container dd{
+.main-nav .job-container .details{
 	margin-top: 10px;
 }
 
-.main-nav .job-container dd a{
+.main-nav .job-container .details a{
 	line-height: 28px;
 	float: left;
 	margin-right: 9px;
 	padding: 0 5px;
 }
 
-.main-nav .job-container dd a:hover{
+.main-nav .job-container a:hover{
 	color: #44AAFF;
 	text-decoration: underline;
 }
@@ -220,20 +220,85 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 	background-color: #fff;
 }
 
-.main-nav .navbar-detail-item{
+.main-nav .navbar-details-container{
 	position: absolute;
 	border: 2px solid #c9cbce;
 	left: 230px;
-	padding: 15px 0 25px 40px;
+	padding: 15px 60px 25px 35px;
+	top: 0;
+	background-color: white;
+	width: 500px;
+	display: none;
+}
+
+.main-nav .navbar-details-container.show{
+	display: block;
+}
+
+.main-nav .navbar-details-container .navbar-detail-item{
+	margin-top: 20px;
+}
+
+.main-nav .navbar-details-container .navbar-detail-item:nth-child(1){
+	margin-top: 0;
+}
+
+.main-nav .navbar-details-container dt{
+	width: 60px;
+	text-align: right;
+	position: absolute;
+}
+
+.main-nav .navbar-details-container dt a{
+	color: #333;
+	text-decoration: underline;
+	margin-top: 8px;
+	display: block;
+}
+
+.main-nav .navbar-details-container dd{
+	margin-left: 80px;
+}
+
+.main-nav .navbar-details-container dd ul{
+	list-style: none;
+}
+
+.main-nav .navbar-details-container .hover-sep{
+	position: absolute;
+	top: 0;
+	width: 4px;
+	left: -4px;
+	background-color: #fff;
 }
 
 
+.main-nav .navbar-details-container dd ul li{
+	float: left;
+	line-height: 29px;
+}
+
+.main-nav .navbar-details-container dd ul li.separate{
+	width: 1px;
+	height: 12px;
+	background-color: #c6c6c6;
+	margin-top: 9px;
+}
+
+.main-nav .navbar-details-container dd ul li a{
+	display: inline-block;
+	padding: 0 12px 0 9px;
+}
+
+.main-nav .navbar-details-container dd ul li a.high-light{
+	color: #1E7CC1;
+}
 
 /* 核心内容区块 */
 .main-content{
 	width: 744px;
 	margin-left: 50px;
-	float: left;
+	float: right;
 	padding-bottom: 100px;
 }
 
@@ -297,6 +362,12 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 	position: relative;
 }
 
+.main-content .carousel-recom .detail-imgs-wrap > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
 .main-content .carousel-recom .job-item-bigpic{
 	position: relative;
 	width: 612px;
@@ -337,6 +408,10 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
     top: 0;
     left: 0;
     background-color: rgba(85, 85, 85, 0.3);
+}
+
+.main-content .carousel-recom .job-item.present i{
+	display: none;
 }
 
 .main-content .carousel-recom .job-item img{
