@@ -211,7 +211,7 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 }
 
 .main-nav .job-container a:hover{
-	color: #44AAFF;
+	color: #0B8CF7;
 	text-decoration: underline;
 }
 
@@ -291,7 +291,7 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 }
 
 .main-nav .navbar-details-container dd ul li a.high-light{
-	color: #1E7CC1;
+	color: #0B8CF7;
 }
 
 /* 核心内容区块 */
@@ -454,6 +454,7 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 	border: 2px solid #fafafa;
 	margin-right: 8px;
 	float: left;
+	overflow: hidden;
 }
 
 .main-content .logo-recom a{
@@ -471,7 +472,7 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 	position: absolute;
 	color: white;
 	top: 0;
-	left: 0;
+	left: 100%;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(33, 133, 207, 0.8);
@@ -537,6 +538,14 @@ header .logo-outer-container ul li .chosen, header .logo-outer-container ul li a
 .main-content .tab-job-info .job-list-outer-container{
 	padding-bottom: 40px;
 	border-bottom: 1px solid #ececed;
+}
+
+.main-content .tab-job-info .job-list-outer-container>div{
+	display: none;
+}
+
+.main-content .tab-job-info .job-list-outer-container>div.chosen{
+	display: block;
 }
 
 .main-content .tab-job-info .job-item-single{
