@@ -127,18 +127,21 @@ $(".logo-recom").on("mousemove", ">div", function(e) {
 
         $hover = $(this).find(".over-info");
 
+        // if ($hover.is(":animated")) {
+        //     $hover.css({ "left": "0", "top": "0" });
+        // } else {
         if (absX > absY) {
             // 代表是左右移动
             if (diffX > 0) {
                 // 左 -> 右
                 $hover.css({ "left": "-100%", "top": "0" })
-                    .animate({ "left": "0" }, 250, function() {
+                    .animate({ "left": "0" }, 200, function() {
                         $that.data("animate", true);
                     });
             } else {
                 // 右 -> 左
                 $hover.css({ "left": "100%", "top": "0" })
-                    .animate({ "left": "0" }, 250, function() {
+                    .animate({ "left": "0" }, 200, function() {
                         $that.data("animate", true);
                     });
             }
@@ -147,18 +150,18 @@ $(".logo-recom").on("mousemove", ">div", function(e) {
             if (diffY > 0) {
                 // 上 -> 下
                 $hover.css({ "left": "0", "top": "-100%" })
-                    .animate({ "top": "0" }, 250, function() {
+                    .animate({ "top": "0" }, 200, function() {
                         $that.data("animate", true);
                     });
             } else {
                 // 下 -> 上
                 $hover.css({ "left": "0", "top": "100%" })
-                    .animate({ "top": "0" }, 250, function() {
+                    .animate({ "top": "0" }, 200, function() {
                         $that.data("animate", true);
                     });;
             }
         }
-
+        // }
         $(this).data("hover", true);
     }
 
@@ -171,6 +174,10 @@ $(".logo-recom").on("mouseleave", ">div", function(e) {
 
     var $that = $(this);
     $hover = $(this).find(".over-info");
+
+    if($hover.is(":animated")){
+        $hover.stop(true, true);
+    }
 
     if ($(this).data("hover")) {
         var _X = $(this).data("x");
@@ -186,24 +193,28 @@ $(".logo-recom").on("mouseleave", ">div", function(e) {
             // 代表是左右移动
             if (diffX > 0) {
                 // 左 -> 右
-                $hover.animate({ "left": "100%" }, 250);
+                $hover.animate({ "left": "100%" }, 200);
             } else {
                 // 右 -> 左
-                $hover.animate({ "left": "-100%" }, 250);
+                $hover.animate({ "left": "-100%" }, 200);
             }
         } else {
             // 代表是上下移动
             if (diffY > 0) {
                 // 上 -> 下
-                $hover.animate({ "top": "100%" }, 250);
+                $hover.animate({ "top": "100%" }, 200);
             } else {
                 // 下 -> 上
-                $hover.animate({ "top": "-100%" }, 250);
+                $hover.animate({ "top": "-100%" }, 200);
             }
         }
-
-        $(this).data("hover", false);
     }
 
+    $(this).data("hover", false);
     $(this).data("x", X).data("y", Y);
 });
+
+// 弹窗初始化事件
+$("#city-choose").data("dialog-dom", $("header .choose-city"));
+
+$(".public-hover").dialog();
