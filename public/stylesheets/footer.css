@@ -1,0 +1,23 @@
+footer{
+	height: 40px;
+	border-top: 1px solid #ebebeb;
+}
+
+footer .footer-container{
+	margin: 0 auto;
+	width: 650px;
+	line-height: 40px;
+	color: #d5d5d5;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer .footer-container img{
+	margin-top: 10px;
+	float: left;
+}
+
+footer .footer-container p{
+	margin-left: 20px;
+	float: left;
+}
