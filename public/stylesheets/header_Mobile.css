@@ -1,0 +1,36 @@
+@charset "utf-8";
+html{
+	font-size: calc(100vw/3.2)!important;
+    -webkit-text-size-adjust: none;
+    letter-spacing: 0.005em;
+}
+
+header{
+	height: 45px;
+	height: 0.45rem;
+	line-height: 45px;
+	line-height: 0.45rem;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	color: white;
+	background-color: #2185CF;
+}
+
+header h1{
+	font-size: 20px;
+	font-size: 0.2rem;
+	height: 45px;
+	height: 0.45rem;
+	line-height: 45px;
+	line-height: 0.45rem;
+}
+
+header .iconfont{
+	position: absolute;
+	font-size: 20px;
+	font-size: 0.2rem;
+	left: 13px;
+	left: 0.13rem;
+	font-weight: normal;
+}

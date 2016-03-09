@@ -1,0 +1,157 @@
+body .iconfont{
+	font-size: 16px;
+	font-size: 0.16rem;
+}
+
+#tips{
+	height: 44px;
+	height: 0.44rem;
+	line-height: 31px;
+	line-height: 0.31rem;
+	padding: 6px 15px;
+	padding: 0.06rem 0.15rem;
+	font-size: 16px;
+	font-size: 0.16rem;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#tips a{
+	display: block;
+	float: right;
+	width: 90px;
+	width: 0.9rem;
+	height: 31px;
+	height: 0.31rem;
+	background-color: #f5f5f5;
+	border-radius: 15px;
+	border-radius: 0.15rem;
+	text-align: center;
+	color: #2185CF;
+}
+
+main{
+	font-size: 16px;
+	font-size: 0.16rem;
+}
+
+main .bar{
+	color: #333;
+	height: 46px;
+	height: 0.46rem;
+	border-bottom: 1px solid #e8e8e8;
+	line-height: 45px;
+	line-height: 0.45rem;
+	font-size: 16px;
+	font-size: 0.16rem;
+	text-align: center;
+	position: relative;
+}
+
+main .bar .btn{
+	width: 25%;
+	border-right: 1px solid #e8e8e8;
+	float: left;
+}
+
+main .bar>input{
+	float: left;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-size: 0.16rem;
+	padding: 14px 45px 13px 12px;
+	padding: 0.14rem 0.45rem 0.13rem 0.12rem;
+	width: 75%;
+}
+
+main .icon-sousuo{
+	display: block;
+	width: 45px;
+	width: 0.45rem;
+	position: absolute;
+	right: 0;
+}
+
+.keywords-wrap li{
+	height: 46px;
+	height: 0.46rem;
+	line-height: 46px;
+	line-height: 0.46rem;
+	color: #666;
+	border-bottom: 1px solid #e8e8e8;
+	background-color: #fafafa;
+	padding-left: 24px;
+	padding-left: 0.24rem;
+}
+
+.keywords-wrap li .iconfont{
+	float: right;
+	display: block;
+	width: 40px;
+	width: 0.4rem;
+	text-align: center;
+}
+
+.result-wrap  li{
+	height: 91px;
+	height: 0.91rem;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 14px 16px;
+	padding: 0.14rem 0.16rem;
+}
+
+.result-wrap img{
+	width: 60px;
+	width: 0.6rem;
+	height: 60px;
+	height: 0.6rem;
+	float: left;
+}
+
+.result-wrap dl{
+	float: left;
+	line-height: 1;
+	color: #333;
+	margin-left: 12px;
+	margin-left: 0.12rem;
+}
+
+.result-wrap h2{
+	font-size: 18px;
+	font-size: 0.18rem;
+}
+
+.result-wrap dt p{
+	margin-top: 9px;
+	margin-top: 0.09rem;
+	font-size: 14px;
+	font-size: 0.14rem;
+	word-spacing: -1px;
+}
+
+.result-wrap dt p:nth-of-type(2){
+	color: #888;
+}
+
+.result-wrap li div{
+	color: #2185CF;
+	font-size: 15px;
+	font-size: 0.15rem;
+	float: right;
+	line-height: 63px;
+	line-height: 0.63rem;
+	word-spacing: -2px;
+	word-spacing: -0.02rem;
+}
+
+main .more{
+	background-color: #fafafa;
+	color: #333;
+	height: 50px;
+	height: 0.5rem;
+	line-height: 50px;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 18px;
+	font-size: 0.18rem;
+}

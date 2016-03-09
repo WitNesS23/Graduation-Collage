@@ -1,0 +1,38 @@
+nav{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 46px;
+	height: 0.46rem;
+	border-top: 1px solid #e8e8e8;
+	background-color: #f6f6f6;
+	line-height: 45px;
+	line-height: 0.45rem;
+	width: 100%;
+}
+
+nav li{
+	width: 33%;
+	float: left;
+	font-size: 18px;
+	font-size: 0.18rem;
+	text-align: center;
+	color: #c2cfcc;
+	word-spacing: -3px;
+	word-spacing: -0.03rem;
+}
+
+nav li a{
+	display: block;
+}
+
+nav li.active{
+	background-color: rgba(132, 191, 235, 0.4);
+	color: #2185CF;
+}
+
+nav li:nth-of-type(1) i,
+nav li:nth-of-type(3) i{
+	vertical-align: 2px;
+	vertical-align: 0.02rem;
+}

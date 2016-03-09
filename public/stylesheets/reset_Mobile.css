@@ -1,0 +1,74 @@
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "Hiragino Sans GB W3", "pingHei", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+div,
+img,
+span,
+input,
+li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong,
+em,
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.clearfix{
+    
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
